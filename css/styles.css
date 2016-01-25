@@ -22,13 +22,11 @@ button{
 	width:200px;
 	line-height: 50px;
 	display: block;
-	background-color: rgba(0,0,0,0.4);	
+	background-color: rgba(0,0,0,0.6);	
 	border:1px solid rgba(255,255,255,0.8);
 	position: absolute;
-	top:0px;
-	bottom:0px;
-	left:0px;
-	right:0px;
+	bottom:50px;
+	right:50px;
 	margin:auto;
 	outline:none;
 	font-size:18px;
@@ -42,4 +40,28 @@ button{
 button:hover{
 	background: rgba(0,0,0,0.7);	
 	cursor: pointer;
+}
+.element{
+	position: absolute;
+    right:-231px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    
+}
+.element.active{
+	-webkit-animation:myfirst 5s; /* Chrome, Safari, Opera */
+    animation:myfirst 5s;
+}
+@-webkit-keyframes myfirst
+{
+0%   {right:-231px; }
+100% {right:100%; }
+}
+
+/* Standard syntax */
+@keyframes myfirst
+{
+0%   {right:-231px; }
+100% {right:100%; }
 }
